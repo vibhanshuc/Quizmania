@@ -367,7 +367,7 @@ String sql = "select * from ADMIN_ACCOUNTS where name=? and password=?";
             pst.setString(2, pwd);
             rs = pst.executeQuery();
             if (rs.next()) {
-                JOptionPane.showMessageDialog(null, "Username and Password is correct");
+                JOptionPane.showMessageDialog(null,"You have logged in-to QUIZMANIA as ADMIN MR." +userName);
  
                 close();
                 
@@ -423,7 +423,7 @@ String sql = "select * from user_accountss where user_name=? and password=?";
             pst.setString(2, pwd);
             rs = pst.executeQuery();
             if (rs.next()) {
-                JOptionPane.showMessageDialog(null, "Username and Password is correct");
+                JOptionPane.showMessageDialog(null,"Welcome to the quiz-mania Mr. " +userName);
  
                     frame4 ob8= new frame4(userName);
                     close();
